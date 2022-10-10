@@ -107,3 +107,7 @@ tbody {
 th , td {
     padding: 2%;
 }
+.disable {
+
+    display: none;
+}
