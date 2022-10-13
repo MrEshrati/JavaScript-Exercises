@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link type="text/css" rel="stylesheet" href="./static/css/style.css">
+    <script type="text/javascript" src="./static/js/script.js" defer></script>
+</head>
+
+<body>
+
+        
+    <h1>Iranian Duz</h1>
+    <h2>Rules are simple:</h2>
+    <h3>Whoever place 3 circles with the same color in a line wins.</h3>
+
+    <div class="board">
+
+        <div class="big-rectangle"></div>
+        <div class="medium-rectangle"></div>
+        <div class="small-rectangle"></div>
+
+        <div class="top-vl"></div>
+        <div class="bottom-vl"></div>
+        <div class="left-hl"></div>
+        <div class="right-hl"></div>
+
+        <div class="left-up"></div>
+        <div class="right-up"></div>
+        <div class="left-down"></div>
+        <div class="right-down"></div>
+
+        <!-- TL = Top Left , TC = Top Center , TR = Top Right , LC = Left Center , LB = Left Bottom
+        RC = Right Center , RB = Right Bottom  -->
+
+        <!-- BR = Big Rectangle -->
+        <div class="BR-TL Circle"></div>
+        <div class="BR-TC Circle"></div>
+        <div class="BR-TR Circle"></div>
+
+        <div class="BR-LC Circle"></div>
+        <div class="BR-LB Circle"></div>
+
+        <div class="BR-RC Circle"></div>
+        <div class="BR-RB Circle"></div>
+
+        <div class="BR-BC Circle"></div>
+
+        <!-- MR = Medium Rectangle -->
+        <div class="MR-TL Circle"></div>
+        <div class="MR-TC Circle"></div>
+        <div class="MR-TR Circle"></div>
+
+        <div class="MR-LC Circle"></div>
+        <div class="MR-LB Circle"></div>
+
+        <div class="MR-RC Circle"></div>
+        <div class="MR-RB Circle"></div>
+
+        <div class="MR-BC Circle"></div>
+
+        <!-- SR = Small Rectangle -->
+        <div class="SR-TL Circle"></div>
+        <div class="SR-TC Circle"></div>
+        <div class="SR-TR Circle"></div>
+
+        <div class="SR-LC Circle"></div>
+        <div class="SR-LB Circle"></div>
+
+        <div class="SR-RC Circle"></div>
+        <div class="SR-RB Circle"></div>
+
+        <div class="SR-BC Circle"></div>
+    </div>
+
+    <div class="result-box">
+
+        <p class="result-text"></p>
+        <p class="turns">Turns Played : <span class="turn-text"></span></p>
+        <button class="button">Restart</button>
+    </div>
+</body>
+
+</html>
