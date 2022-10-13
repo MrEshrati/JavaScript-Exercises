@@ -126,32 +126,39 @@ function select(event) {
         duzGame.turns --;
     
         checkGame(divClass);
-    
-        if (duzGame.turns === 0) {
-    
-            document.querySelector('.board').style.display = 'none';
-            document.querySelector('.result-box').style.display = 'block';
-        }
     }
 }
 
 function checkGame(elementClass) {
 
-    let object = duzGame.winningCondition[elementClass];
-    let obj = Object.keys(object);
+    if (duzGame.turns === 0) {
     
-    for (let i = 1; i <= obj.length; i++) {
+        document.querySelector('.turn-text').innerHTML = 24;
+        let result = document.querySelector('.result-text');
+        result.innerHTML = `Tie`;
+        result.style.color = 'green';
 
-        let split = object[i].split(',');
-        let elementColor = duzGame.circleStatus[elementClass];
-        let firstobjcolor = duzGame.circleStatus[split[0]];
-        let secondobjcolor = duzGame.circleStatus[split[1]];
+        document.querySelector('.board').style.display = 'none';
+        document.querySelector('.result-box').style.display = 'block';
+    } else {
 
-        if (elementColor === firstobjcolor && elementColor === secondobjcolor) {
+        let object = duzGame.winningCondition[elementClass];
+        let obj = Object.keys(object);
+    
+        for (let i = 1; i <= obj.length; i++) {
 
-            win(elementColor);
+            let split = object[i].split(',');
+            let elementColor = duzGame.circleStatus[elementClass];
+            let firstobjcolor = duzGame.circleStatus[split[0]];
+            let secondobjcolor = duzGame.circleStatus[split[1]];
+
+            if (elementColor === firstobjcolor && elementColor === secondobjcolor) {
+
+                win(elementColor);
+            }
         }
     }
+    
 }
 
 function win(elementColor) {
