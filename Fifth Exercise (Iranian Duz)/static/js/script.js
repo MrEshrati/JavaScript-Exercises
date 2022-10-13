@@ -8,8 +8,8 @@ let duzGame = {
         'BR-LC' : { 1: 'BR-TL,BR-LB', 2: 'MR-LC,SR-LC',},
         'BR-LB' : { 1: 'BR-LC,BR-TL', 2: 'BR-BC,BR-RB', 3: 'MR-LB,SR-LB',},
         'BR-BC' : { 1: 'BR-LB,BR-RB', 2: 'MR-BC,SR-BC',},
-        'BR-RB' : { 1: 'BR-BL,BR-BC', 2: 'BR-RC,BR-TR', 3: 'MR-RB,SR-RB'},
-        'BR-RC' : { 1: 'BR-TR,BR-BL', 2: 'MR-RC,SR-RC',},
+        'BR-RB' : { 1: 'BR-LB,BR-BC', 2: 'BR-RC,BR-TR', 3: 'MR-RB,SR-RB'},
+        'BR-RC' : { 1: 'BR-TR,BR-LB', 2: 'MR-RC,SR-RC',},
 
         'MR-TL' : { 1: 'MR-TC,MR-TR' , 2: 'MR-LC,MR-LB' , 3: 'SR-TL,BR-TL',},
         'MR-TC' : { 1: 'MR-TR,MR-TL' , 2: 'SR-TC,BR-TC',},
@@ -17,8 +17,8 @@ let duzGame = {
         'MR-LC' : { 1: 'MR-TL,MR-LB' , 2: 'SR-LC,BR-LC',},
         'MR-LB' : { 1: 'MR-LC,MR-TL' , 2: 'MR-BC,MR-RB' , 3: 'SR-LB,BR-LB',},
         'MR-BC' : { 1: 'MR-LB,MR-RB' , 2: 'BR-BC,SR-BC',},
-        'MR-RB' : { 1: 'MR-BL,MR-BC' , 2: 'MR-RC,MR-TR' , 3: 'SR-RB,BR-RB',},
-        'MR-RC' : { 1: 'MR-TR,MR-BL' , 2: 'BR-RC,SR-RC',},
+        'MR-RB' : { 1: 'MR-LB,MR-BC' , 2: 'MR-RC,MR-TR' , 3: 'SR-RB,BR-RB',},
+        'MR-RC' : { 1: 'MR-TR,MR-LB' , 2: 'BR-RC,SR-RC',},
 
         'SR-TL' : { 1: 'SR-TC,SR-TR' , 2: 'SR-LC,SR-LB' , 3: 'MR-TL,BR-TL',},
         'SR-TC' : { 1: 'SR-TR,SR-TL' , 2: 'MR-TC,BR-TC',},
@@ -26,8 +26,8 @@ let duzGame = {
         'SR-LC' : { 1: 'SR-TL,SR-LB' , 2: 'MR-LC,BR-LC',},
         'SR-LB' : { 1: 'SR-LC,SR-TL' , 2: 'SR-BC,SR-RB' , 3: 'MR-LB,BR-LB',},
         'SR-BC' : { 1: 'SR-LB,SR-RB' , 2: 'BR-BC,MR-BC',},
-        'SR-RB' : { 1: 'SR-BL,SR-BC' , 2: 'SR-RC,SR-TR' , 3: 'MR-RB,BR-RB',},
-        'SR-RC' : { 1: 'SR-TR,SR-BL' , 2: 'BR-RC,MR-RC',},        
+        'SR-RB' : { 1: 'SR-LB,SR-BC' , 2: 'SR-RC,SR-TR' , 3: 'MR-RB,BR-RB',},
+        'SR-RC' : { 1: 'SR-TR,SR-LB' , 2: 'BR-RC,MR-RC',},        
         
     },
 
