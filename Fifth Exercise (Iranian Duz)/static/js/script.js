@@ -147,6 +147,7 @@ function checkGame(elementClass) {
     
         for (let i = 1; i <= obj.length; i++) {
 
+            console.log(object[i]);
             let split = object[i].split(',');
             let elementColor = duzGame.circleStatus[elementClass];
             let firstobjcolor = duzGame.circleStatus[split[0]];
