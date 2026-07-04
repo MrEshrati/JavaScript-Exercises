@@ -6,7 +6,9 @@ window.draggedDOM = null;
 Array.from(dropZone).forEach(function(element){
 
     element.addEventListener('dragstart', dragStart);
-    element.addEventListener('dragenter', dragEnter);
+    
+    // element.addEventListener('dragenter', dragEnter);
+    
     element.addEventListener('dragover', function(event){
 
         event.preventDefault();
@@ -14,35 +16,37 @@ Array.from(dropZone).forEach(function(element){
 
     element.addEventListener('drop', dragDropped);
 
-    element.addEventListener('dragend', function(){
+    // element.addEventListener('dragend', function(){
 
-        draggedDOM.style.opacity = 1;
-    });
+    //     draggedDOM.style.opacity = 1;
+    // });
 });
 
 function dragStart(event) {
 
     const element = event.target;
     draggedDOM = element;
-    element.style.opacity = 0.7;
+    // element.style.opacity = 0.7;
 }
 
-function dragEnter() {
+// function dragEnter() {
 
-    const dropZone = this;
-    const dragedElement = dropZone.querySelector("#element");
+//     const dropZone = this;
+//     const dragedElement = dropZone.querySelector("#img_1");
 
-    if (dragedElement) return false;
+//     if (dragedElement) return false;
 
-    dropZone.appendChild(draggedDOM);
+//     dropZone.appendChild(draggedDOM);
 
-}
+// }
 
 function dragDropped(event) {
 
-    event.preventDefault();
+    const dropZone = this;
 
+    event.preventDefault();
     dropZone.appendChild(draggedDOM);
+
 }
 
 

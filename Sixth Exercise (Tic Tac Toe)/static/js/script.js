@@ -1,6 +1,6 @@
 const Game = {
 
-    winingCondisions : {
+    winingConditions : {
 
         1: '0,1,2',
         2: '3,4,5',
@@ -183,7 +183,7 @@ class winner {
 
     checkWin() {
         let first,second,third;
-        let object = Game.winingCondisions;
+        let object = Game.winingConditions;
         let keys = Object.keys(object);
         for (let i = 1; i <= keys.length; i++) {
 
