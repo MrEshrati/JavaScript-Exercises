@@ -12,3 +12,7 @@ Six standalone HTML, CSS, and JavaScript exercises for practicing DOM events and
 | Tic-tac-toe | [index.html](Sixth%20Exercise%20%28Tic%20Tac%20Toe%29/index.html) |
 
 Open a page from your local checkout in a browser. Keep each HTML file in its original folder so its scripts, styles, and images load correctly.
+
+## License
+
+The [MIT License](LICENSE) covers MrEshrati's original exercise code and documentation. Third-party logos, photos, and other media are outside this grant.
